@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link href="css/index.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/leaflet.css"/>
+    <!--<script type="text/javascript" src="js/n2.js"></script>-->
+    </head>
+	<body>
+		<div class="box">
+			<div id="map">
+				
+			</div>
+			<div id="scroll-top">
+				<div id="scroll-top-box">
+					<marquee behavior="scroll" contenteditable="true" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" scrollamount="3" width="901" onmouseover="this.stop();" onmouseout="this.start();"> 
+						截至8月10日，今年以来我国大陆地区共发生4.0级以上地震共计47次，其中5.0级以上地震6次，6.0-7.0级地震1次（8月9日新疆精河6.6级地震）、7.0级以上地震1次（8月8日四川九寨沟7.0级地震）。
+					</marquee>	
+				</div>
+			</div>	
+			<ul class="xf-ul">
+				<li class="icon icon1 active"></li>
+				<li class="icon icon2"></li>
+				<li class="icon icon3"></li>
+				<li class="icon icon4"></li>
+				<li class="icon icon5"></li>
+			</ul>
+			<div class="xf-right">
+				<span class="xfr2"></span>
+				<span class="xfr3"></span>
+				<span class="xfr5"></span>
+			</div>
+			<div class="xf-footer">
+				<div class="fl">
+					<ul class="footer-left">
+						<li class="ty">
+							<span class="footer-left-span1 span-icon1"></span>
+							<span class="footer-left-span2 sp3">最新灾情</span>
+						</li>
+						<li class="ty">
+							<span class="footer-left-span1 span-icon2"></span>
+							<span class="footer-left-span2 sp3">重大灾害</span>
+						</li>
+						<li class="ty">
+							<span class="footer-left-span1 span-icon3"></span>
+							<span class="footer-left-span2">国家救灾应急响应</span>
+						</li>
+						<li class="ty">
+							<span class="footer-left-span1 span-icon4"></span>
+							<span class="footer-left-span2">年/月度灾情分析</span>
+						</li>
+						<li class="ty">
+							<span class="footer-left-span1 span-icon5"></span>
+							<span class="footer-left-span2">年度风险评估</span>
+						</li>
+					</ul>
+				</div>
+				<div class="fr">
+					<ul class="footer-right">
+						<li>
+							<span class="footer-left-span1 span-icon6"></span>
+							<span class="footer-left-span2 sp3">昨日灾情</span>
+						</li>
+						<li>
+							<span class="footer-left-span1 span-icon7"></span>
+							<span class="footer-left-span2">震感监测评估</span>
+						</li>
+						<li>
+							<span class="footer-left-span1 span-icon8"></span>
+							<span class="footer-left-span2">灾害评估专报</span>
+						</li>
+						<li>
+							<span class="footer-left-span1 span-icon9"></span>
+							<span class="footer-left-span2 sp3">救灾快报</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="liebiao">
+				<table class="liebiao-table"  width=910 align=center>
+					 <caption>标题</caption>
+					 <thead>
+					 	<tr align=center>
+						  <th style="width: 91px;">震级</th>
+						  <th style="width: 273px;">发震时刻[UTV+8]</th>
+						  <th style="width: 91px;">纬度[°]</th>
+						  <th style="width: 91px;">经度[°]</th>
+						  <th style="width: 91px;">深度[km]</th>
+						  <th style="width: 273px;">参考位置</th>
+						 </tr>
+					 </thead>
+						 
+					 <tbody class="dizhenliebiao">
+						<tr align=center>
+							  <td>5.0</td>
+							  <td>2017-05-25 09:27:05</td>
+							  <td>15:21</td>
+							  <td>120.32</td>
+							  <td>60</td>
+							  <td>重庆</td>
+						</tr>
+						<tr align=center>
+							  <td>5.5</td>
+							  <td>2017-05-20 08:27:05</td>
+							  <td>32.01</td>
+							  <td>116.20</td>
+							  <td>60</td>
+							  <td>云南</td>
+						</tr>
+						<tr align=center>
+							  <td>5.0</td>
+							  <td>2017-04-25 13:27:05</td>
+							  <td>25:24</td>
+							  <td>140.32</td>
+							  <td>60</td>
+							  <td>四川</td>
+						</tr>
+						</tbody>	 
+				</table>
+			</div>
+			<div class="tongyong">
+				<img src="img/zxzq.jpg"/>
+			</div>
+			<div class="tongyong">
+				<img src="img/zdzh.jpg"/>
+			</div>
+			<div class="tongyong">
+				<img src="img/yjxy.jpg"/>
+			</div>
+			<div class="tongyong">
+				<img src="img/04.jpg"/>
+			</div>
+			<div class="tongyong">
+				<img src="img/05.jpg"/>
+			</div>
+			
+			<div class="tuli">
+				<p><span class="tuli-cion1"></span><span>4~5级</span> <span class="item-span1"> 41 </span><span> 次 </span></p>
+				<p><span class="tuli-cion2"></span><span>5~6级</span> <span class="item-span2"> 4 </span><span> 次 </span></p>
+				<p><span class="tuli-cion3"></span><span>6~7级</span> <span class="item-span3"> 1 </span><span> 次 </span></p>
+				<p><span class="tuli-cion4"></span><span>7级以上</span> <span class="item-span4"> 1 </span><span> 次 </span></p>
+			</div>
+		</div>
+		
+		
+		
+		<script src="js/leaflet.js"></script>
+		<!--<script src="js/proj4-compressed.js"></script>-->
+		<!--<script src="js/proj4leaflet.js"></script>-->
+		<script src="js/leaflet.ChineseTmsProviders.js"></script>
+		<script src="js/data.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
